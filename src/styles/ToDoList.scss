@@ -21,6 +21,9 @@
     margin: 1em auto;
   }
 }
+.todoList::-webkit-scrollbar {
+  display: none;
+}
 
 @media only screen and (max-width: 750px) {
   .todoList {
