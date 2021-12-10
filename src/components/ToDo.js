@@ -3,7 +3,7 @@ import "../styles/ToDo.scss";
 import ToDoForm from "./ToDoForm";
 import { AiOutlineCloseCircle, AiOutlineEdit } from "react-icons/ai";
 
-function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
+function ToDo({ todos, completeToDo, removeTodo, updateTodo }) {
   const [edit, setEdit] = useState({
     id: null,
     value: "",
@@ -26,7 +26,7 @@ function ToDo({ todos, completeTodo, removeTodo, updateTodo }) {
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
       key={index}
     >
-      <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+      <div key={todo.id} onClick={() => completeToDo(todo.id)}>
         {todo.text}
       </div>
 
